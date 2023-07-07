@@ -1,4 +1,4 @@
-import { Component, Input, Output, EventEmitter } from '@angular/core';
+import { Component, Input, Output, EventEmitter, ChangeDetectionStrategy  } from '@angular/core';
 import { MatTableDataSource } from '@angular/material/table';
 
 import { Header, Data } from './my-table.model';
@@ -6,7 +6,8 @@ import { Header, Data } from './my-table.model';
 @Component({
   selector: 'lib-my-table',
   templateUrl: './my-table.component.html',
-  styleUrls: ['./my-table.component.css']
+  styleUrls: ['./my-table.component.css'],
+  changeDetection: ChangeDetectionStrategy.OnPush
 })
 
 
