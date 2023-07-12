@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { ZyfraLibraryComponent } from './zyfra-library.component';
+import { MyTableModule } from './my-table/my-table.module';
 
 
 
@@ -9,10 +10,11 @@ import { ZyfraLibraryComponent } from './zyfra-library.component';
     ZyfraLibraryComponent,
     
   ],
-  imports: [
+  imports: [MyTableModule
   ],
   exports: [
-    ZyfraLibraryComponent
+    ZyfraLibraryComponent,
+    MyTableModule
   ]
 })
 export class ZyfraLibraryModule { }
