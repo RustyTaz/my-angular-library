@@ -38,9 +38,6 @@ export class MyTableComponent {
     return this.header.map(headerColumn => headerColumn.title);
   }
 
-  getDisplayedColumns(): string[] {
-    return this.header.map(headerColumn => headerColumn.title);
-  }
 }
 
 
